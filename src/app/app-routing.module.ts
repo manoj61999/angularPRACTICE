@@ -6,6 +6,7 @@ import { SampleComponent } from './sample/sample.component';
 import { ExcerComponent } from './excer/excer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { CustomerComponent } from './customer/customer.component';
 
 const routes: Routes = [
   {path:'register',component:RegisterComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:'',component:SampleComponent},
   {path:'excer',component:ExcerComponent},
   {path:'registration',component:RegistrationComponent},
-  {path:'wishlist',component:WishlistComponent}
+  {path:'wishlist',component:WishlistComponent},
+  {path: 'customer',component:CustomerComponent}
 ];
 
 @NgModule({

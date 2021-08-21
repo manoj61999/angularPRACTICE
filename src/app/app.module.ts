@@ -11,6 +11,7 @@ import { ExcerComponent } from './excer/excer.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { CustomerComponent } from './customer/customer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     SampleComponent,
     ExcerComponent,
     RegistrationComponent,
-    WishlistComponent
+    WishlistComponent,
+    CustomerComponent,
   ],
   imports: [
     BrowserModule,
