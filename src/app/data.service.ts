@@ -3,6 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable} from 'rxjs';
 import { FormGroup } from '@angular/forms';
 
+// user 
+
 export class User {
   id: string | undefined;
   firstname: string | undefined;
@@ -12,6 +14,9 @@ export class User {
   phone:string | undefined;
   dob:string | undefined;
 }
+
+// product (pro)
+
   export class pro {
     productname:String | undefined;
     productid:String | undefined;
@@ -34,13 +39,17 @@ export class DataService {
       'Content-Type': 'application/json'
     })
   }  
+  
+  //observable
 
   getUsers(): Observable<User> {
-    return this.httpClient.get<User>(this.endPoint + '/api/getUserDetails');
+    return this.httpClient.get<User>(this.endPoint + '/api/getUserDetails');  //user
   }
   getproduct(): Observable<pro> {
-    return this.httpClient.get<pro>(this.endPoint + '/api/viewProduct');
+    return this.httpClient.get<pro>(this.endPoint + '/api/viewProduct');  //product (pro)
   }
+  
+  
   addUser(data: FormGroup): Observable<User> {
     
     let senddata={
@@ -52,6 +61,6 @@ export class DataService {
     "dob":data.value.DateoBirth
     }
     console.log(senddata,"hiii")
-    return this.httpClient.post<User>(this.endPoint + '/api/register', JSON.stringify(senddata), this.httpHeader)
+    return this.httpClient.post<User>(this.endPoint + '/api/register', JSON.stringify(senddata), this.httpHeader)  //node.js endpoint /api/register
   }  
 }
