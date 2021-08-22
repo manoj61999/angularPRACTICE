@@ -1,6 +1,8 @@
+//registration.component.ts  intraction (HTTP Service method)
+
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable} from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';  //HTTP Service
+import { Observable} from 'rxjs';                                //HTTP Service
 import { FormGroup } from '@angular/forms';
 
 // user 
