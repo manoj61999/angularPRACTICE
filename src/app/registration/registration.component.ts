@@ -20,16 +20,21 @@ export class RegistrationComponent implements OnInit {
     this.fetchUsers()
     this.fetchProduct()
   }
- 
+  
+  //.subscribe
+  
+ // METHOD showing in HTML
   fetchUsers() {
-    return this.data.getUsers().subscribe((items:any)=> {
+    return this.data.getUsers().subscribe((items:any)=> {   //getUsers
       console.log(items)
       this.Users = items;
       this.Users=this.Users.data
   })
 }
+  
+  //METHOD showing in HTML
 fetchProduct() {
-     return this.data.getproduct().subscribe((items1:any)=> {
+     return this.data.getproduct().subscribe((items1:any)=> {   //getproduct
       console.log(items1)
       this.Product = items1;
       this.Product = this.Product.data
