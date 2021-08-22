@@ -1,5 +1,7 @@
+//customer.component.ts intraction (using queryparams method)
+
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute,Router } from '@angular/router';
+import { ActivatedRoute,Router } from '@angular/router';  //component to component intraction
 
 @Component({
   selector: 'app-wishlist',
@@ -8,9 +10,12 @@ import { ActivatedRoute,Router } from '@angular/router';
 })
 export class WishlistComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute,private router: Router) { }
+  constructor(private route: ActivatedRoute,private router: Router) { }   //component to component intraction
 
   orderby:any;
+  
+  //queryparams reciver component 
+  
   ngOnInit(): void {
     this.route.queryParams
   .subscribe(params => {
