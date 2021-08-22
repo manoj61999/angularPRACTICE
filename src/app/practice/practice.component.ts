@@ -1,3 +1,6 @@
+// login (formGroup and formControl)
+// even emitter method
+
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component,OnDestroy,OnInit } from '@angular/core';
 import { FormControl,FormGroup } from '@angular/forms';
