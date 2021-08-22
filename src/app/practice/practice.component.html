@@ -3,11 +3,11 @@
   <form [formGroup]="userdetails" (ngSubmit)="loginFunction()">
     <label>
       <h3 class="uname"><b>User Name:</b></h3>
-      <input class="unamein" type="text" placeholder="userName"  formControlName="userName" required>
+      <input class="unamein" type="text" placeholder="userName"  formControlName="userName" >
     </label> <br>
     <label>
       <h3 class="pasw"><b>password:</b></h3>
-      <input class="pws" type="password" placeholder="password" formControlName="password" required>
+      <input class="pws" type="password" placeholder="password" formControlName="password" >
     </label> <br>
 <button (click)="showData($event)" class="button" ngtype="submit" name="button">Login</button>{{name}} <br>
     
