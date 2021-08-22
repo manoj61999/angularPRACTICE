@@ -1,3 +1,5 @@
+//DataService.ts intraction (http service method)
+
 import { Component, OnInit } from '@angular/core';
 import { DataService } from "../data.service";
 import { Subscription } from 'rxjs';
