@@ -1,6 +1,8 @@
+//wishlist.component.ts intraction ( use queryParams method)
+
 import { Component, OnInit } from '@angular/core';
-import { FormControl,FormGroup } from '@angular/forms';
-import { ActivatedRoute,Router } from '@angular/router';
+import { FormControl,FormGroup } from '@angular/forms';     //Reactive Forms method
+import { ActivatedRoute,Router } from '@angular/router';   //component to component intraction 
 @Component({
   selector: 'app-customer',
   templateUrl: './customer.component.html',
@@ -18,7 +20,7 @@ export class CustomerComponent implements OnInit {
   })
 
 
-  constructor(private route: ActivatedRoute,private router: Router) { }
+  constructor(private route: ActivatedRoute,private router: Router) { }   // component to component intraction 
 
 
   ngOnInit(): void {
