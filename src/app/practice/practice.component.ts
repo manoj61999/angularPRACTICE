@@ -28,8 +28,8 @@ ngOnInit() {
   }
 
   showData($event: any){
-    this.name="the button is clicked"
-    console.log("button clicked")
+    this.name="the button is clicked" //<the button is clicked> will display when the button is clicked 
+    console.log("button clicked") // <button clicked> it will display inside the console 
 
   }
 }
