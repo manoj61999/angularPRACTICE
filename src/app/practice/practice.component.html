@@ -10,7 +10,8 @@
       <input class="pws" type="password" placeholder="password" formControlName="password" required>
     </label> <br>
 <button (click)="showData($event)" class="button" ngtype="submit" name="button">Login</button>{{name}} <br>
-<a [routerLink]="['/register']">forgot password ?</a>
+    
+<a [routerLink]="['/register']">forgot password ?</a>  //routerLink using HTML method (redirecting to one component to another component)
 
 
 <input type="file" id="myFile" name="filename">
