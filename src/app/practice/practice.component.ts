@@ -29,10 +29,12 @@ ngOnInit() {
   loginFunction(){
     console.log(this.userdetails.value);
   }
+  
+  //EventEmitter method
 
   showData($event: any){
-    this.name="the button is clicked" //<the button is clicked> will display when the button is clicked 
-    console.log("button clicked") // <button clicked> it will display inside the console 
+    this.name="the button is clicked"   //<the button is clicked> will display when the button is clicked 
+    console.log("button clicked")       // <button clicked> it will display inside the console when the button is clicked
 
   }
 }
